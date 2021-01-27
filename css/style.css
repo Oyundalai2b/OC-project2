@@ -1,0 +1,13 @@
+body {
+  background-color: antiquewhite;
+}
+/* .fas fa-map-marker-alt {
+  display: inline;
+} */
+
+nav {
+  display: inline-block;
+}
+ul {
+  list-style-type: none;
+}
