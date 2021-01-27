@@ -1,13 +1,79 @@
 body {
-  background-color: antiquewhite;
+  font-family: "Raleway", sans-serif;
+  background-color: white;
 }
-/* .fas fa-map-marker-alt {
-  display: inline;
-} */
+.container {
+  margin: auto 20px;
+}
+.nav-container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.filter-container {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 20px;
+}
+.filter-container .filter-item {
+  border: 2px solid #f2f2f2;
+  border-radius: 20px;
+  width: auto;
+  padding: 5px 5px 5px 5px;
+  margin: auto 5px;
+}
+.filter-container .filter-item:nth-child(1) {
+  border: none;
+}
+.accom-container {
+  display: flex;
+  flex-direction: row;
+}
 
-nav {
-  display: inline-block;
+.accom-container .accommodations {
+  border: none;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  flex-grow: 2;
+  margin-right: 20px;
+  padding: 0 20px 0 20px;
 }
-ul {
-  list-style-type: none;
+.accom-container .accommodations .accom-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.accom-container .accommodations .accom-list .accom-list-item {
+  width: 33.33%;
+  height: 200px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+.accom-container .accommodations .accom-list .accom-list-item img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  display: block;
+}
+
+.accom-container .popular {
+  border: none;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  flex-grow: 1;
+  padding: 0 20px 0 20px;
+}
+.accom-container .popular .popular-list .popular-list-item {
+  /* border: none; */
+  border-radius: 10px;
+  background-color: white;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+.accom-container .popular .popular-list .popular-list-item img {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  width: 100%;
+  height: auto;
 }

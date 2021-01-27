@@ -3,33 +3,155 @@
   <head>
     <meta charset="utf-8" />
     <title>Reservia</title>
-    <link href="css/style.css" rel="stylesheet" type="text.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/all.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="#">Accommodations</a></li>
-        <li><a href="#"> Activities</a></li>
-        <li><a href="#"> Sign Up</a></li>
-      </ul>
-    </nav>
-    <h1>Reservia</h1>
+    <div class="container">
+      <div class="nav-container">
+        <div class="nav-container-menu">
+          <a href="#"><strong>Sign Up</strong></a>
+        </div>
+        <div class="nav-container-menu">
+          <a href="#"><strong>Activities</strong></a>
+        </div>
+        <div class="nav-container-menu">
+          <a href="#"><strong>Accommodations</strong></a>
+        </div>
+      </div>
+      <img src="images/logo/Reservia@3x.png" alt="Reservia" title="Reservia" />
+      <div class="search-container">
+        <h3><strong>Find a place for your dream vacation</strong></h3>
+        <p>Downtown or in nature</p>
 
-    <h2>Find a place for your dream vacation</h2>
-    <p>Downtown or in nature</p>
-    <i class="fas fa-map-marker-alt"></i>
-    <input type="text" placeholder="Marseille, France" />
-    <button type="submit">Search</button>
+        <i class="fas fa-map-marker-alt"></i>
+        <input type="text" placeholder="Marseille, France" />
+        <button type="submit">Search</button>
+      </div>
+      <div class="filter-container">
+        <div class="filter-item">
+          <strong>Filters</strong>
+        </div>
+        <div class="filter-item">
+          <i class="fas fa-money-bill-wave">Low cost</i>
+        </div>
+        <div class="filter-item">
+          <i class="fas fa-child">Family-friendly</i>
+        </div>
+        <div class="filter-item">
+          <i class="fas fa-heart">Romantic</i>
+        </div>
+        <div class="filter-item">
+          <i class="fas fa-dog">Pets allowed</i>
+        </div>
+      </div>
+      <div>
+        <i class="fas fa-info-circle"></i> More than 500 accommodations are
+        available in this city
+      </div>
+      <div class="accom-container">
+        <div class="accommodations">
+          <h3>Accommodations in Marseille</h3>
+          <div class="accom-list">
+            <div class="accom-list-item">
+              <a href="#"
+                ><img
+                  src="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                  alt="marcus-loke-WQJvWU_HZFo-unsplash"
+                  title=" marcus-loke-WQJvWU_HZFo unsplash"
+                />
+                Auberge la Cannnebierre
+              </a>
+            </div>
+            <div class="accom-list-item">
+              <a href="#"
+                ><img
+                  src="images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                  alt="marcus-loke-WQJvWU_HZFo-unsplash"
+                  title=" marcus-loke-WQJvWU_HZFo unsplash"
+                />
+                Hotel du Port
+              </a>
+            </div>
+            <div class="accom-list-item">
+              <a href="#"
+                ><img
+                  src="images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                  alt="marcus-loke-WQJvWU_HZFo-unsplash"
+                  title=" marcus-loke-WQJvWU_HZFo unsplash"
+                />
+                Les Moutlete hotel
+              </a>
+            </div>
+            <div class="accom-list-item">
+              <a href="#"
+                ><img
+                  src="images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                  alt="marcus-loke-WQJvWU_HZFo-unsplash"
+                  title=" marcus-loke-WQJvWU_HZFo unsplash"
+                />
+                Hotel De La Mer
+              </a>
+            </div>
+            <div class="accom-list-item">
+              <a href="#"
+                ><img
+                  src="images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                  alt="marcus-loke-WQJvWU_HZFo-unsplash"
+                  title=" marcus-loke-WQJvWU_HZFo unsplash"
+                />
+                Aubergie Le Panier
+              </a>
+            </div>
+            <div class="accom-list-item">
+              <a href="#"
+                ><img
+                  src="images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                  alt="marcus-loke-WQJvWU_HZFo-unsplash"
+                  title=" marcus-loke-WQJvWU_HZFo unsplash"
+                />
+                Hotel Chez Amina
+              </a>
+            </div>
+          </div>
 
-    <p>Filters</p>
-
-    <!-- lowcost icon -->
-    <i class="fas fa-money-bill-wave">Low cost</i>
-    <!-- familyfriendly -->
-    <i class="fas fa-child">Family-friendly</i>
-    <!-- romantic -->
-    <i class="fas fa-heart">Romantic</i>
-    <!-- dog -->
-    <i class="fas fa-dog">Pets allowed</i>
+          Show more
+        </div>
+        <div class="popular">
+          <h3>Most Popular</h3>
+          <div class="popular-list">
+            <div class="popular-list-item">
+              <a href="#"
+                ><img
+                  src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                  alt="Morning sun hotel"
+                />Morning sun hotel</a
+              >
+            </div>
+            <div class="popular-list-item">
+              <a href="#"
+                ><img
+                  src="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                  alt="Au Coer hotel"
+                />Au Coer hotel bed and breakfast</a
+              >
+            </div>
+            <div class="popular-list-item">
+              <a href="#"
+                ><img
+                  src="images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                  alt="Morning sun hotel"
+                />Tout bleu et Blanc hotel</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
