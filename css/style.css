@@ -2,12 +2,38 @@ body {
   font-family: "Raleway", sans-serif;
   background-color: white;
 }
+html {
+  scroll-behavior: smooth;
+}
 .container {
   margin: auto 20px;
 }
 .nav-container {
-  display: flex;
-  flex-direction: row-reverse;
+  font-size: medium;
+  text-align: right;
+}
+/* display: inline;
+  flex-direction: row;
+  letter-spacing: 0.06em;
+} */
+.nav-container ul li {
+  display: inline;
+  list-style-type: none;
+  margin: 20px;
+  padding: 0;
+}
+.nav-container ul li a {
+  text-decoration: none;
+}
+/* .nav-container .nav-container-menu {
+  padding: 0px 10px 0px 10px;
+} */
+.nav-container .nav-container-menu a:hover {
+  background-color: lightblue;
+  font-weight: normal;
+}
+img {
+  width: 100px;
 }
 .filter-container {
   display: flex;
@@ -18,9 +44,15 @@ body {
   border: 2px solid #f2f2f2;
   border-radius: 20px;
   width: auto;
-  padding: 5px 5px 5px 5px;
+  padding: 5px 5px 5px 0px;
   margin: auto 5px;
 }
+.filter-container .filter-item .fas:before {
+  border-radius: 20px;
+  background-color: lightblue;
+  padding: 6px;
+}
+
 .filter-container .filter-item:nth-child(1) {
   border: none;
 }
@@ -31,9 +63,10 @@ body {
 
 .accom-container .accommodations {
   border: none;
+  width: 1000px;
+  height: auto;
   border-radius: 10px;
   background-color: #f2f2f2;
-  flex-grow: 2;
   margin-right: 20px;
   padding: 0 20px 0 20px;
 }
@@ -41,10 +74,11 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .accom-container .accommodations .accom-list .accom-list-item {
-  width: 33.33%;
-  height: 200px;
+  width: 30.33%;
+  height: 260px;
   background-color: white;
   border-radius: 10px;
   padding: 5px;
@@ -54,18 +88,18 @@ body {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   width: 100%;
+  height: 200px;
   display: block;
 }
 
 .accom-container .popular {
   border: none;
+  width: 300px;
   border-radius: 10px;
   background-color: #f2f2f2;
-  flex-grow: 1;
   padding: 0 20px 0 20px;
 }
 .accom-container .popular .popular-list .popular-list-item {
-  /* border: none; */
   border-radius: 10px;
   background-color: white;
   padding: 5px;
@@ -75,5 +109,56 @@ body {
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
   width: 100%;
+  height: 150px;
+}
+.activities {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: bolder;
+}
+
+.activities .activities-item {
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 270px;
   height: auto;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+}
+.activities .activities-item .activities-sub-item {
+  display: inline;
+  border: none;
+  justify-content: space-between;
+  width: 200px;
+  height: 300px;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  margin-right: 20px;
+}
+
+.activities .activities-item img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  height: 320px;
+  display: block;
+}
+
+.activities .activities-item .activities-sub-item img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  height: 150px;
+}
+.activities .activities-item .activities-sub-item a {
+  text-decoration: none;
+}
+.activities .activities-item .activities-sub-item label {
+  padding: 20px 0 0 20px;
+  line-height: 40px;
+}
+a:hover a:focus a:active {
+  text-decoration: none;
+  color: inherit;
 }
