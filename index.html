@@ -1,34 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
     <title>Reservia</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
       rel="stylesheet"
     />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobile.css" rel="stylesheet" type="text/css" />
     <link href="css/all.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <div class="container">
-      <div class="nav-container">
-        <ul>
-          <li><a href="#accommodation">Accommodations</a></li>
-          <li><a href="#activities">Activities</a></li>
-          <li><a href="#">Sign Up</a></li>
-        </ul>
+      <div class="header">
+        <img
+          id="logo"
+          src="images/logo/Reservia@3x.png"
+          alt="Reservia"
+          title="Reservia"
+        />
+        <div class="nav-container sign-up">
+          <ul>
+            <li><a href="#">Sign Up</a></li>
+          </ul>
+        </div>
+        <div class="nav-container links">
+          <ul>
+            <li><a href="#accommodation">Accommodations</a></li>
+            <li><a href="#activities">Activities</a></li>
+          </ul>
+        </div>
       </div>
-      <img src="images/logo/Reservia@3x.png" alt="Reservia" title="Reservia" />
       <div class="search-container">
         <h3><strong>Find a place for your dream vacation</strong></h3>
         <p>Downtown or in nature</p>
-        <i class="fas fa-map-marker-alt"></i
-        ><input type="text" placeholder="Marseille, France" /><input
-          type="button"
-          value="Search"
-        />
+        <div class="searchbox">
+          <i class="fas fa-map-marker-alt map"></i
+          ><input type="text" placeholder="Marseille, France" /><input
+            type="button"
+            value="Search"
+          />
+          <i class="fas fa-search search"></i>
+        </div>
       </div>
       <div class="filter-container">
         <div class="filter-item">

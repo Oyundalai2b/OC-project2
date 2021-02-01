@@ -1,0 +1,62 @@
+@media (max-width: 480px) {
+  #logo {
+  }
+  .container .header {
+    flex-wrap: wrap;
+  }
+  .container .header .sign-up {
+    order: 2;
+  }
+  .container .header .links {
+    order: 3;
+  }
+  .search-container input[type="button"] {
+    visibility: hidden;
+    position: absolute;
+  }
+  .search-container .fas.search {
+    visibility: visible;
+  }
+  .search-container .fas.search:before {
+    border-radius: 10px;
+    background-color: #0065fc;
+    padding: 13px 15px 14px 15px;
+    vertical-align: middle;
+    text-align: center;
+  }
+  .accom-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .accom-container .accommodations {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .accom-container .accommodations .accom-list .accom-list-item {
+    width: 100%;
+  }
+
+  .accom-container .popular {
+    width: 100%;
+  }
+  .activities {
+    flex-direction: column;
+    width: 100%;
+  }
+  .activities .activities-item {
+    width: 100%;
+  }
+  .activities .activities-item img {
+    height: 150px;
+  }
+  .activities .activities-item .activities-sub-item img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 150px;
+  }
+  .footer {
+    flex-direction: column;
+  }
+}
