@@ -18,17 +18,26 @@
     order: 2;
     color: blue;
   }
+
   .container .header .links {
     order: 3;
     width: 100%;
+    position: none;
+    right: 0;
+    padding-bottom: 0px;
+    padding-right: 0px;
   }
   .container .header .links ul {
     display: flex;
-    justify-content: space-around;
-    padding-left: 0px;
-    margin: 0;
+    justify-content: space-evenly;
+    font-size: large;
+    list-style-type: none;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
   }
-
   .container .header .nav-container a:hover {
     color: blue;
     background-color: transparent;
@@ -36,7 +45,6 @@
     border-bottom-style: solid;
     border-top-style: none;
     border-color: blue;
-    padding-top: 20px;
   }
   .nav-container a:visited {
     text-decoration-color: blue;
@@ -44,7 +52,7 @@
   }
 
   .container .search-container {
-    padding: 20px;
+    padding: 0px 20px 20px 20px;
   }
   .search-container input[type="button"] {
     visibility: hidden;
@@ -61,7 +69,7 @@
     text-align: center;
   }
   .container .filter-container {
-    padding: 20px;
+    padding: 0px 20px 10px 20px;
     margin-top: 0px;
   }
   .container #accommodation {
@@ -83,13 +91,6 @@
   .accom-container .accommodations .accom-list .accom-list-item {
     width: 100%;
   }
-  /* .accom-container .popular .popular-list .popular-list-item a.lbl div.title {
-    display: block;
-    padding: 15px 0 0 10px;
-    line-height: 30px;
-    font-weight: bolder;
-  } */
-
   .accom-container .popular {
     background-color: #f2f2f2;
     width: 100%;
