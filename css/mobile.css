@@ -1,24 +1,30 @@
-@media screen and (min-device-width: 321px) and (max-device-width: 480px) {
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
   body {
     margin: 0px;
   }
-  #logo {
-    width: 150px;
-    padding-left: 20px;
+  html {
+    min-width: 320px;
+    scroll-behavior: smooth;
   }
   .container {
     margin: 0px;
   }
-
   .container .header {
     flex-wrap: wrap;
     margin-right: 0px;
+    margin-top: 10px;
+  }
+
+  .container img#logo {
+    width: 150px;
+    height: auto;
+    padding-left: 20px;
+    padding-top: 10px;
   }
   .container .header .sign-up {
     order: 2;
     color: blue;
   }
-
   .container .header .links {
     order: 3;
     width: 100%;
@@ -49,14 +55,29 @@
   .nav-container a:visited {
     text-decoration-color: blue;
     font-weight: bolder;
+    font-size: larger;
+    border-bottom-style: solid;
+    border-top-style: none;
   }
-
   .container .search-container {
     padding: 0px 20px 20px 20px;
+    line-height: 10px;
+  }
+  .container .search-container h3 {
+    font-size: larger;
+  }
+  .container .search-container .searchbox {
+    width: auto;
+    justify-content: right;
+  }
+  .container .search-container .searchbox input[type="text"] {
+    width: 250px;
+    /* font-size: larger; */
   }
   .search-container input[type="button"] {
     visibility: hidden;
     position: absolute;
+    font-size: large;
   }
   .search-container .fas.search {
     visibility: visible;
@@ -64,13 +85,23 @@
   .search-container .fas.search:before {
     border-radius: 10px;
     background-color: #0065fc;
+    color: #ffffff;
     padding: 13px 15px 14px 15px;
     vertical-align: middle;
     text-align: center;
+    visibility: visible;
   }
   .container .filter-container {
     padding: 0px 20px 10px 20px;
     margin-top: 0px;
+    font-size: larger;
+  }
+  .filter-container .filter-item:nth-child(1) {
+    border: none;
+    width: 100%;
+  }
+  .filter-container .filter-item:nth-child(3) {
+    order: 4;
   }
   .container #accommodation {
     padding: 20px;
@@ -83,13 +114,21 @@
   .accom-container .accommodations {
     background-color: #ffffff;
     flex-direction: column;
-    width: 100%;
-    padding: 0px 20px 20px 0px;
-    margin-right: 20px;
+    width: auto;
+    margin: 0px;
+    padding: 0px;
   }
-
-  .accom-container .accommodations .accom-list .accom-list-item {
-    width: 100%;
+  .container
+    .accom-container
+    .accommodations
+    .accom-list
+    .accom-list-item
+    .title {
+    font-size: large;
+  }
+  .accom-container .accommodations .accom-list {
+    display: block;
+    width: auto;
   }
   .accom-container .popular {
     background-color: #f2f2f2;
@@ -100,6 +139,7 @@
   .accom-container .popular h3 {
     padding: 30px 20px 0px 20px;
     margin: 0px;
+    font-size: large;
   }
 
   .accom-container .popular .popular-list {
@@ -115,10 +155,13 @@
   .accom-container .popular .popular-list .popular-list-item a.lbl {
     flex: 1 1 55%;
     padding-left: 10px;
+    font-size: large;
   }
   .accom-container .accommodations h3 {
     padding: 30px 20px 0px 20px;
     margin: 0px;
+    font-size: larger;
+    justify-content: center;
   }
   .accom-container .accommodations .accom-list {
     padding: 20px;
@@ -131,6 +174,7 @@
   }
   .container .accom-container .accommodations a.showmore {
     padding-left: 20px;
+    font-size: large;
   }
   .activities {
     flex-direction: column;
@@ -138,23 +182,41 @@
     justify-content: space-between;
     padding: 20px;
   }
+  #activities {
+    padding-left: 0px;
+  }
   h3#activities {
     padding: 30px 20px 0px 20px;
     margin: 0px;
   }
+  .activities {
+    padding: 0px;
+  }
   .activities .activities-item {
     background-color: #ffffff;
     width: auto;
-    padding: 10px;
+    padding: 20px;
   }
-
+  .activities .activities-item .single .title {
+    font-size: large;
+  }
   .activities .activities-item .activities-sub-item {
     margin-bottom: 20px;
+  }
+  .activities .activities-item .activities-sub-item .title {
+    font-size: large;
   }
   .activities .activities-item .activities-sub-item:last-child {
     margin-bottom: 0px;
   }
-
+  .accom-container .popular .popular-list .popular-list-item .fas.checked {
+    font-size: smaller;
+    color: #0065fc;
+  }
+  .accom-container .popular .popular-list .popular-list-item .fas {
+    color: #f2f2f2;
+    font-size: smaller;
+  }
   .activities .activities-item img {
     height: 150px;
   }
@@ -166,5 +228,9 @@
   }
   .footer {
     flex-direction: column;
+    padding-left: 10px;
+  }
+  .footer .about {
+    padding-left: 0;
   }
 }
