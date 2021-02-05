@@ -92,7 +92,8 @@ padding-bottom: 10px;
 }
 .search-container input[type="button"] {
   background-color: #0065fc;
-  font-weight: bolder  justify-content: space-evenly;
+  font-weight: bolder  
+  justify-content: space-evenly;
   color: #ffffff;
   padding: 14px 20px 14px 20px;
   border-style: none;
@@ -320,7 +321,7 @@ padding-bottom: 10px;
   border: none;
   padding: 0 10px 0 10px;
   height: auto;
-}
+  }
 .activities .activities-item .single {
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -336,7 +337,7 @@ padding-bottom: 10px;
   width: 100%;
   height: 380px;
   display: block;
-}
+  }
 .activities .activities-item a {
   text-decoration: none;
   color: #000000;
@@ -344,6 +345,7 @@ padding-bottom: 10px;
 .activities .activities-item div.title {
   padding: 10px 0 10px 20px;
   line-height: 30px;
+  font-size: smaller;
 }
 .activities .activities-item .activities-sub-item img {
   border-top-left-radius: 10px;

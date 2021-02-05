@@ -3,8 +3,8 @@
     margin: 0px;
   }
   #logo {
-    width: 150px;
-    padding-left: 20px;
+    width: auto;
+    padding: 20px 0 0 20px;
   }
   .container {
     margin: 0px;
@@ -17,26 +17,6 @@
   .container .header .sign-up {
     order: 2;
     color: blue;
-  }
-
-  .container .header .links {
-    order: 3;
-    width: 100%;
-    position: none;
-    right: 0;
-    padding-bottom: 0px;
-    padding-right: 0px;
-  }
-  .container .header .links ul {
-    display: flex;
-    justify-content: space-evenly;
-    font-size: large;
-    list-style-type: none;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0px;
   }
   .container .header .nav-container a:hover {
     color: blue;
@@ -55,11 +35,11 @@
     padding: 0px 20px 20px 20px;
   }
   .search-container input[type="button"] {
-    visibility: hidden;
+    visibility: visible;
     position: absolute;
   }
   .search-container .fas.search {
-    visibility: visible;
+    visibility: hidden;
   }
   .search-container .fas.search:before {
     border-radius: 10px;
@@ -77,6 +57,7 @@
   }
   .accom-container .accommodations {
     width: 100%;
+    margin-right: 0px;
   }
   .accom-container {
     display: flex;
@@ -93,7 +74,6 @@
   .accom-container .accommodations .accom-list {
     justify-content: space-between;
   }
-
   .accom-container .accommodations .accom-list .accom-list-item {
     width: 100%;
     display: flex;
@@ -108,7 +88,8 @@
     margin: 0px;
   }
   .accom-container .accommodations .accom-list {
-    padding: 20px;
+    padding: 0px;
+    margin: 0 10px 0 10px;
   }
   .accom-container .accommodations .accom-list .accom-list-item {
     background-color: #ffffff;
@@ -121,33 +102,44 @@
   }
   .accom-container .popular {
     background-color: #f2f2f2;
-    width: 100%;
     border-radius: 0;
     padding: 0 20px 20px 20px;
   }
   .accom-container .popular h3 {
-    padding: 30px 20px 0px 20px;
-    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    width: auto;
+    padding-right: 10px;
   }
   .accom-container .popular .popular-list .popular-list-item {
     background-color: #f2f2f2;
     padding: 10px;
     margin-bottom: 20px;
+    height: 200px;
   }
   .accom-container .popular .popular-list .popular-list-item a.lbl {
-    flex: 1 1 55%;
-    padding-left: 10px;
+    flex: 1 1 30%;
+    padding-left: 30px;
+    font-size: medium;
+  }
+  .accom-container .popular .popular-list .popular-list-item img {
+    width: 100%;
+    height: 200px;
   }
   .activities {
     flex-direction: row;
     flex-wrap: wrap;
     width: auto;
     justify-content: space-between;
-    padding: 20px;
+    padding: 20px 15px 20px 15px;
   }
   h3#activities {
-    padding: 30px 20px 0px 20px;
+    padding: 20px 20px 0px 20px;
     margin: 0px;
+  }
+  .container #activities {
+    padding-left: 20px;
   }
   .activities .activities-item {
     background-color: #ffffff;
@@ -158,8 +150,12 @@
     justify-content: space-between;
     flex: 2 2 40%;
   }
+  .activities .activities-item .single .title {
+    font-size: small;
+  }
   .activities .activities-item .single img {
     height: 90%;
+    object-fit: cover;
   }
   .activities .activities-item .activities-sub-item {
     margin-bottom: 20px;
@@ -167,16 +163,17 @@
   .activities .activities-item .activities-sub-item:last-child {
     margin-bottom: 0px;
   }
-
   .activities .activities-item .activities-sub-item img {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    object-fit: cover;
     width: 100%;
     height: 150px;
   }
   .footer {
     flex-direction: row;
-    flex-wrap: wrap;
-    padding-left: 20px;
+    flex-wrap: nowrap;
+    padding-left: 10px;
+    padding-bottom: 30px;
   }
 }
