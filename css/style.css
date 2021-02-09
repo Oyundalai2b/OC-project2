@@ -3,7 +3,7 @@ body {
   background-color: #ffffff;
 }
 html {
-  min-width: 1000px;
+  /* min-width: 1000px; */
   scroll-behavior: smooth;
 }
 .container {
