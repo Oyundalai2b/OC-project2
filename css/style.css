@@ -1,3 +1,4 @@
+html, body { margin: 0; padding: 0; }
 body {
   font-family: "Raleway", sans-serif;
   background-color: #ffffff;
@@ -143,7 +144,6 @@ padding-bottom: 10px;
 .accom-container .accommodations {
   flex: 1 1 100%;
   border: none;
-  width: 66.66%;
   height: auto;
   border-radius: 10px;
   background-color: #f2f2f2;
@@ -183,6 +183,7 @@ padding-bottom: 10px;
   display: block;
 }
 .accom-container .accommodations .accom-list .accom-list-item a {
+  width:100%;
   text-decoration: none;
   color: #000000;
 }
@@ -227,7 +228,6 @@ padding-bottom: 10px;
   flex: 2 2 100%;
   justify-content: space-between;
   border: none;
-  width: auto;
   border-radius: 10px;
   background-color: #f2f2f2;
   padding: 20px 20px 0 20px;
@@ -316,7 +316,7 @@ padding-bottom: 10px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  flex: 2 2 100;
+  flex: 1 1 100%;
   justify-content: space-between;
   border: none;
   padding: 0 10px 0 10px;
@@ -360,7 +360,6 @@ padding-bottom: 10px;
 .footer {
   display: flex;
   flex-direction: row;
-   width: 100%;
   height: auto;
   background-color: #f2f2f2;
   padding-top: 40px;
@@ -393,12 +392,12 @@ padding-bottom: 10px;
   padding: 20px 10px 30px 20px;
 }
 .footer .about {
-  flex: 1 1 33.33%;
+  flex: 1 1 100%;
 }
 .footer .our-accom {
-  flex: 1 1 33.33%;
+  flex: 1 1 100%;
 }
 .footer .assistance {
-  flex: 1 1 33.33%;
+  flex: 1 1 100%;
 }
 
