@@ -28,7 +28,6 @@
   .container .header .links {
     order: 3;
     width: 100%;
-    position: none;
     right: 0;
     padding-bottom: 0px;
     padding-right: 0px;
@@ -38,11 +37,6 @@
     justify-content: space-evenly;
     font-size: large;
     list-style-type: none;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0px;
   }
   .container .header .nav-container a:hover {
     color: blue;
@@ -67,18 +61,17 @@
     font-size: larger;
   }
   .container .search-container .searchbox {
-    width: auto;
     justify-content: right;
   }
   .container .search-container .searchbox input[type="text"] {
-    width: 250px;
-    /* font-size: larger; */
+    width: 60%;
   }
   .search-container input[type="button"] {
     visibility: hidden;
     position: absolute;
     font-size: large;
   }
+
   .search-container .fas.search {
     visibility: visible;
   }
@@ -114,7 +107,6 @@
   .accom-container .accommodations {
     background-color: #ffffff;
     flex-direction: column;
-    width: auto;
     margin: 0px;
     padding: 0px;
   }
@@ -128,13 +120,12 @@
   }
   .accom-container .accommodations .accom-list {
     display: block;
-    width: auto;
   }
   .accom-container .popular {
     background-color: #f2f2f2;
-    width: 100%;
+
     border-radius: 0;
-    padding: 0 20px 20px 0px;
+    padding: 0;
   }
   .accom-container .popular h3 {
     padding: 30px 20px 0px 20px;
@@ -147,7 +138,6 @@
   }
   .accom-container .popular .popular-list .popular-list-item {
     background-color: #f2f2f2;
-    width: auto;
     justify-content: center;
     padding: 10px;
     margin-bottom: 20px;
@@ -201,7 +191,7 @@
     font-size: large;
   }
   .activities .activities-item .activities-sub-item {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
   .activities .activities-item .activities-sub-item .title {
     font-size: large;

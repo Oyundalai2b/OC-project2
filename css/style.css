@@ -1,10 +1,13 @@
-html, body { margin: 0; padding: 0; }
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: "Raleway", sans-serif;
   background-color: #ffffff;
 }
 html {
-  /* min-width: 1000px; */
   scroll-behavior: smooth;
 }
 .container {
@@ -38,7 +41,7 @@ html {
   display: inline;
   justify-content: right;
   list-style-type: none;
-  margin: 20px; 
+  margin: 20px;
 }
 .container .header .nav-container ul li a {
   text-decoration: none;
@@ -69,8 +72,8 @@ html {
 .container .search-container {
   line-height: 8px;
 }
-.container .search-container p{
-padding-bottom: 10px;
+.container .search-container p {
+  padding-bottom: 10px;
 }
 .container .search-container .fas.map:before {
   border-top-left-radius: 10px;
@@ -93,7 +96,7 @@ padding-bottom: 10px;
 }
 .search-container input[type="button"] {
   background-color: #0065fc;
-  font-weight: bolder  
+  font-weight: bolder;
   justify-content: space-evenly;
   color: #ffffff;
   padding: 14px 20px 14px 20px;
@@ -139,7 +142,7 @@ padding-bottom: 10px;
   display: flex;
   flex-direction: row;
   justify-content: stretch;
-  font-weight: bolder;  
+  font-weight: bolder;
 }
 .accom-container .accommodations {
   flex: 1 1 100%;
@@ -183,7 +186,7 @@ padding-bottom: 10px;
   display: block;
 }
 .accom-container .accommodations .accom-list .accom-list-item a {
-  width:100%;
+  width: 100%;
   text-decoration: none;
   color: #000000;
 }
@@ -203,7 +206,7 @@ padding-bottom: 10px;
 .container .accom-container .accommodations .accom-list .accom-list-item .fas {
   color: #f2f2f2;
   font-size: small;
-  }
+}
 .container
   .accom-container
   .accommodations
@@ -268,7 +271,6 @@ padding-bottom: 10px;
   padding: 15px 0 0 10px;
   line-height: 30px;
   font-weight: bolder;
- 
 }
 .accom-container .popular .popular-list .popular-list-item a.lbl div.price {
   padding: 15px 0 0 0px;
@@ -309,7 +311,7 @@ padding-bottom: 10px;
   justify-content: space-between;
   font-weight: bolder;
 }
-.container #activities{
+.container #activities {
   padding-left: 10px;
 }
 .activities .activities-item {
@@ -321,7 +323,7 @@ padding-bottom: 10px;
   border: none;
   padding: 0 10px 0 10px;
   height: auto;
-  }
+}
 .activities .activities-item .single {
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -337,7 +339,7 @@ padding-bottom: 10px;
   width: 100%;
   height: 380px;
   display: block;
-  }
+}
 .activities .activities-item a {
   text-decoration: none;
   color: #000000;
@@ -400,4 +402,3 @@ padding-bottom: 10px;
 .footer .assistance {
   flex: 1 1 100%;
 }
-
