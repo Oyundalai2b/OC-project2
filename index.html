@@ -14,27 +14,26 @@
     <link href="css/all.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div class="container">
-      <div class="header">
+      <header>
         <img
           id="logo"
           src="images/logo/Reservia@3x.png"
           alt="Reservia"
           title="Reservia"
         />
-        <div class="nav-container sign-up">
+        <nav class="sign-up">
           <ul>
             <li><a href="#">Sign Up</a></li>
           </ul>
-        </div>
-        <div class="nav-container links">
+        </nav>
+        <nav class="links">
           <ul>
             <li><a href="#accommodation">Accommodations</a></li>
             <li><a href="#activities">Activities</a></li>
           </ul>
-        </div>
-      </div>
-      <div class="search-container">
+        </nav>        
+      </header>      
+      <section class="search-container"> 
         <h3><strong>Find a place for your dream vacation</strong></h3>
         <p>Downtown or in nature</p>
         <div class="searchbox">
@@ -45,8 +44,8 @@
           />
           <i class="fas fa-search search"></i>
         </div>
-      </div>
-      <div class="filter-container">
+      </section>
+      <section class="filter-container">
         <div class="filter-item">
           <strong>Filters</strong>
         </div>
@@ -63,8 +62,8 @@
         </div>
         <div class="filter-item">
           <i class="fas fa-dog"></i> <a href="#">Pets allowed</a>
-        </div>
-      </div>
+        </div>      
+      </section>
       <div id="accommodation">
         <span class="fa-stack">
           <i class="far fa-circle fa-stack-2x"></i>
@@ -72,7 +71,7 @@
         </span>
         <span> More than 500 accommodations are available in this city </span>
       </div>
-      <div class="accom-container">
+       <main>
         <div class="accommodations">
           <h3>Accommodations in Marseille</h3>
           <div class="accom-list">
@@ -186,9 +185,9 @@
             </div>
           </div>
           <a class="showmore" href="#"><strong> Show more</strong></a>
-        </div>
+        </div>        
         <div class="popular">
-          <h3>Most Popular <i class="fas fa-chart-line"></i></h3>
+                  <h3>Most Popular <i class="fas fa-chart-line"></i></h3>
           <div class="popular-list">
             <div class="popular-list-item">
               <a class="img" href="#"
@@ -245,10 +244,12 @@
             </div>
           </div>
         </div>
-      </div>
+        <!-- </div> -->
+      <!-- </section> -->
+      </main>       
       <h3 id="activities">Activities in Marseille</h3>
-      <div class="activities">
-        <div class="activities-item">
+      <section class="activities">  
+              <div class="activities-item">
           <div class="single">
             <a href="#"
               ><img
@@ -314,11 +315,11 @@
               />
               <div class="title">Longchamp</div>
             </a>
-          </div>
+          </div>        
         </div>
-      </div>
-    </div>
-    <div class="footer">
+      </section>     
+    </div>   
+    <footer>
       <div class="about">
         <label>About</label>
         <ul>
@@ -341,6 +342,6 @@
           <li>Contact Us</li>
         </ul>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
